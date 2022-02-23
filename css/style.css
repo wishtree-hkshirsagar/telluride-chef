@@ -1,0 +1,105 @@
+/* ============================
+         Default Theme:
+    -----------------------------------
+    Fonts: 
+        Main Font:       Poppins
+        Fallback Font:   Sans Serif
+    -----------------------------------
+    Colors:
+        White: #FFFFFF
+        Black: #000000
+        Creole: #383027
+        Grey: #D3D3D3
+        Sea Green: #319647
+============================ */
+
+
+/*=====================================
+                Colors
+=======================================*/
+
+ :root {
+    --white: #ffffff;
+    --black: #000000;
+    --creole: #383027;
+    --grey: #d3d3d3;
+    --sea-green: #319647;
+}
+
+
+/*=====================================
+                CSS Reset
+=======================================*/
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+}
+
+
+/*=====================================
+              HTML, Body
+=======================================*/
+
+html {
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--white);
+    color: var(--black);
+}
+
+a {
+    text-decoration: none;
+    color: var(--black);
+}
+
+li {
+    list-style: none;
+}
+
+
+/*=====================================
+            Utilities Classes
+=======================================*/
+
+.container {
+    max-width: 1175.6px;
+    margin: 0 auto;
+}
+
+.display-flex {
+    display: flex;
+}
+
+
+/*=====================================
+            Pre-Loader
+=======================================*/
+
+#preloader {
+    background-color: var(--white);
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 9999;
+}
+
+#status {
+    background-image: url("../images/preloader/preloader.gif");
+    background-repeat: no-repeat;
+    width: 180px;
+    height: 165px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -90px;
+    margin-top: -82.5px;
+}
