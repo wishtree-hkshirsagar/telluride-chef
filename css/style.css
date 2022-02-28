@@ -10,6 +10,7 @@
         Black: #000000
         Creole: #383027
         Grey: #D3D3D3
+        Light Gray: #3830270d
         Sea Green: #319647
 ============================ */
 
@@ -23,7 +24,38 @@
     --black: #000000;
     --creole: #383027;
     --grey: #d3d3d3;
+    --light-grey: #3830270d;
     --sea-green: #319647;
+}
+
+
+/*=====================================
+                Fonts
+=======================================*/
+
+@font-face {
+    font-family: 'Poppins-Regular';
+    src: url('fonts/Poppins-Regular.ttf') format('ttf');
+}
+
+@font-face {
+    font-family: 'Poppins-Light';
+    src: url('fonts/Poppins-Light.ttf') format('ttf');
+}
+
+@font-face {
+    font-family: 'Poppins-Semibold';
+    src: url('fonts/Poppins-SemiBold.ttf') format('ttf');
+}
+
+@font-face {
+    font-family: 'Poppins-Bold';
+    src: url('fonts/Poppins-Bold.ttf') format('ttf');
+}
+
+@font-face {
+    font-family: 'Poppins-Black';
+    src: url('fonts/Poppins-Black.ttf') format('ttf');
 }
 
 
@@ -36,6 +68,12 @@
 *::before {
     margin: 0;
     padding: 0;
+}
+
+img {
+    display: inline-block;
+    vertical-align: top;
+    max-width: 100%;
 }
 
 
@@ -71,10 +109,14 @@ li {
 .container {
     max-width: 1175.6px;
     margin: 0 auto;
+    padding: 68px 113px 22px 113px;
 }
 
-.display-flex {
-    display: flex;
+.btn {
+    padding: 9px 20px;
+    background: #383027;
+    color: #fff;
+    border-radius: 10px;
 }
 
 
@@ -102,4 +144,296 @@ li {
     top: 50%;
     margin-left: -90px;
     margin-top: -82.5px;
+}
+
+
+/*=====================================
+        Header Section Starts
+=======================================*/
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: -66px;
+}
+
+.navbar-nav {
+    position: relative;
+    top: 10px;
+}
+
+.navbar-nav .navbar-links ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar-nav .navbar-links ul li {
+    padding: 0 22.3px;
+}
+
+.navbar-nav .navbar-links ul li:last-child a {
+    color: var(--sea-green);
+}
+
+.brand-title {
+    padding: 55px 30.47px 35px 28px;
+    box-shadow: 0px 3px 6px var(--grey);
+    border-radius: 0 0 20px 20px;
+    -webkit-border-radius: 0 0 20px 20px;
+    -moz-border-radius: 0 0 20px 20px;
+    -ms-border-radius: 0 0 20px 20px;
+    -o-border-radius: 0 0 20px 20px;
+    opacity: 1;
+}
+
+.home-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-wrapper .home-banner-info h1 {
+    font-family: 'Poppins-Semibold';
+    font-size: 45px;
+    line-height: 60px;
+}
+
+.home-wrapper .home-banner-info {
+    flex: 0 0 43.22%;
+    max-width: 43.22%;
+    position: relative;
+}
+
+.home-wrapper .home-banner-image {
+    flex: 0 0 56.77%;
+    max-width: 56.77%;
+    position: relative;
+}
+
+.home-banner-image .leaf {
+    position: absolute;
+    left: 100px;
+    bottom: 60px;
+}
+
+.home-banner-info::before {
+    content: "";
+    position: absolute;
+    height: 530px;
+    width: 610px;
+    top: -79%;
+    background-image: url(../images/home-page/Path-634.svg);
+    z-index: -6;
+    left: -55%;
+}
+
+
+/*=====================================
+        About Section Starts
+=======================================*/
+
+.about-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-image {
+    flex: 0 0 58.05%;
+    max-width: 58.05%;
+}
+
+.about-info {
+    flex: 0 0 41.94%;
+    max-width: 41.94%;
+    position: relative;
+}
+
+.about-info h2 {
+    font-family: 'Poppins-SemiBold';
+    font-size: 25px;
+    margin-bottom: 16px;
+}
+
+.about-info p {
+    font-weight: 'Poppins-Regular';
+    font-size: 16px;
+    margin-bottom: 25px;
+}
+
+.about-info::after {
+    content: "";
+    position: absolute;
+    background-image: url(../images/home-page/Path-633.svg);
+    width: 680px;
+    height: 738px;
+    bottom: -21%;
+    right: -46%;
+    z-index: -6;
+}
+
+
+/*=====================================
+        Services Section Starts
+=======================================*/
+
+.services-logo,
+.testimonials-logo {
+    text-align: center;
+}
+
+.services-logo img,
+.testimonials-logo img {
+    margin-bottom: 45px;
+}
+
+.services-logo h2 {
+    font-family: 'Poppins-SemiBold';
+    font-size: 25px;
+    margin-bottom: 100px;
+}
+
+.service-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    position: relative;
+}
+
+.service-one {
+    position: relative;
+}
+
+.service-one-info img,
+.service-two-info img,
+.service-three-info img {
+    margin-bottom: 70px;
+}
+
+.service-two-info h3 {
+    margin-top: 25px;
+}
+
+.service-three-info h3 {
+    margin-top: 15px;
+}
+
+.service-one-info::before {
+    content: "";
+    position: absolute;
+    background: url(../images/home-page/Path\ 608.svg) no-repeat center/cover;
+    width: 288px;
+    height: 224px;
+    bottom: 53%;
+    right: -35%;
+    z-index: -6;
+    left: 8%;
+}
+
+.service-two-info::before {
+    content: "";
+    position: absolute;
+    background: url(../images/home-page/Path\ 609.svg) no-repeat center/cover;
+    width: 276px;
+    height: 220px;
+    bottom: 53%;
+    right: -35%;
+    z-index: -6;
+    left: 37%;
+}
+
+.service-three-info::before {
+    content: "";
+    position: absolute;
+    background: url(../images/home-page/Path\ 610.svg) no-repeat center/cover;
+    width: 276px;
+    height: 220px;
+    bottom: 55%;
+    right: -35%;
+    z-index: -6;
+    left: 70%;
+}
+
+.service-one p,
+.service-two p,
+.service-three p {
+    margin-bottom: 30px;
+    font-family: 'Poppins-Light';
+    line-height: 25px;
+}
+
+.service-one-info h3,
+.service-two-info h3,
+.service-three-info h3 {
+    font-family: 'Poppins-SemiBold';
+    font-size: 18px;
+}
+
+.service-one {
+    flex: 0 0 32.74%;
+}
+
+.service-two {
+    flex: 0 0 31.81%;
+}
+
+.service-three {
+    flex: 0 0 31.30%;
+}
+
+
+/*=====================================
+        Testimonials Section Starts
+=======================================*/
+
+.testimonials {
+    text-align: center;
+}
+
+
+/*=====================================
+        Contact Us Section Starts
+=======================================*/
+
+.contact {
+    background-color: var(--light-grey);
+}
+
+.contact-us-wrapper {
+    display: flex;
+}
+
+.contact-us-info {
+    flex: 0 0 37.34%;
+    max-width: 37.34%;
+}
+
+.contact-us-form {
+    flex: 0 0 62.65%;
+    max-width: 62.65%;
+}
+
+.contact-us-form input {
+    border: none;
+    height: 40px;
+    border-radius: 10px;
+    padding: 7px 15px;
+    width: 75%;
+    margin-bottom: 15px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.contact-us-form textarea {
+    border: none;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
 }
