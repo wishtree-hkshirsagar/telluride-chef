@@ -14,13 +14,14 @@
 
     <!-- Fontawesome -->
     <link rel="stylesheet" href="css/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/style.css">
 
-    <!-- Slick Slider CSS -->
-    <link rel="stylesheet" href="css/slick-slider/slick.css">
-    <link rel="stylesheet" href="css/slick-slider/slick-theme.css">
+    <!-- Responsive CSS -->
+    <link rel="stylesheet" href="css/responsive.css">
 
     <!-- Owl Carousel CSS -->
     <link rel="stylesheet" href="css/owl-carousel/owl.carousel.min.css">
@@ -76,6 +77,68 @@
                 </nav>
                 <!-- Navigation Links Ends -->
             </div>
+            <!-- Mobile Navigation Bar Starts -->
+            <nav class="mobile-navigation" id="mobile-navigation">
+                <div class="container">
+                    <div class="navbar-header">
+                        <span class="nav-close" id="nav-close">
+                <i class="fas fa-times"></i>
+            </span>
+                    </div>
+                    <ul class="mobile-nav-items">
+                        <li>
+                            <a href="/" class="home-icon nav-link">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="31.282" height="30" viewBox="0 0 31.282 30">
+                                    <g id="home_5_" data-name="home (5)" transform="translate(0 -10.492)">
+                                      <g id="Group_13" data-name="Group 13" transform="translate(0 10.492)">
+                                        <path id="Path_10" data-name="Path 10" d="M30.927,24.3,18.195,11.479l-.05-.048a3.663,3.663,0,0,0-4.887-.01l-.051.048L.359,24.292a1.222,1.222,0,0,0,1.726,1.73l.97-.968V35.6a4.893,4.893,0,0,0,4.888,4.888h4.4a1.222,1.222,0,0,0,1.222-1.222V29.311h4.277V39.27a1.222,1.222,0,0,0,1.222,1.222h4.277A4.893,4.893,0,0,0,28.227,35.6a1.222,1.222,0,1,0-2.444,0,2.447,2.447,0,0,1-2.444,2.444H20.285V28.089a1.222,1.222,0,0,0-1.222-1.222H12.342a1.222,1.222,0,0,0-1.222,1.222v9.959H7.943A2.447,2.447,0,0,1,5.5,35.6V22.652q0-.018,0-.036L14.9,13.227a1.221,1.221,0,0,1,1.585,0l9.293,9.355v6.909a1.222,1.222,0,1,0,2.444,0V25.045l.966.972A1.222,1.222,0,0,0,30.927,24.3Z" transform="translate(0 -10.492)"/>
+                                      </g>
+                                    </g>
+                                  </svg>
+
+                            </a>
+                        </li>
+                        <li><a href="#" class="nav-link">About</a></li>
+                        <li><a href="#" class="nav-link">Private Chef</a></li>
+                        <li><a href="#" class="nav-link">Meal Kits</a></li>
+                        <li><a href="#" class="nav-link">Sliegh Ride Dinners</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="mobile-navbar-links">
+                <div class="mobile-nav">
+                    <div class="container">
+                        <div class="mobile-nav-wrapper display-flex">
+                            <div class="mobile-nav-about">
+                                <img src="./images/home-page/responsive/home (1).svg" alt="about">
+                                <h6>About</h6>
+                            </div>
+                            <div class="nav-divider">
+                                <img src="./images/home-page/responsive/Line 1.svg" alt="">
+                            </div>
+                            <div class="mobile-nav-location">
+                                <img src="./images/home-page/responsive/location-pin.svg" alt="location">
+                                <h6>Location</h6>
+                            </div>
+                            <div class="nav-divider">
+                                <img src="./images/home-page/responsive/Line 2.svg" alt="">
+                            </div>
+                            <div class="mobile-nav-phone">
+                                <img src="./images/home-page/responsive/telephone.svg" alt="phone-call">
+                                <h6>Phone</h6>
+                            </div>
+                            <div class="nav-divider">
+                                <img src="./images/home-page/responsive/Line 3.svg" alt="">
+                            </div>
+                            <div class="mobile-nav-menu">
+                                <img src="./images/home-page/responsive/menu.svg" alt="menu" id="nav-btn">
+                                <h6>Menu</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Mobile Navigation Bar Ends -->
         </div>
     </header>
     <!-- Header Section Ends -->
@@ -165,14 +228,27 @@
         <!-- Testimonial Section Starts -->
         <section class="testimonial">
             <div class="container">
-                <div class="testimonials-logo">
-                    <img src="images/home-page/services-logo.svg" alt="testimonials">
-                    <h2>Testimonials</h2>
-                </div>
-                <div id="testimonial-slider" class="owl-carousel owl-theme">
-                    <div class="testimonials">
-                        <h4>Amazing amazing! The service was so friendly and the food was divine. What a perfect evening. Truly magical.</h4>
-                        <p>- HarperDenCo August 29 2020</p>
+                <div class="testimonial-wrapper">
+                    <div class="testimonials-logo">
+                        <img src="images/home-page/services-logo.svg" alt="testimonials">
+                        <h2>Testimonials</h2>
+                    </div>
+                    <div id="testimonial-slider" class="owl-carousel owl-theme">
+                        <div class="testimonials">
+                            <h4>Amazing amazing! The service was so friendly and the food was divine. What&nbsp;a&nbsp;perfect evening. Truly magical.</h4>
+                            <p>- HarperDenCo August 29 2020</p>
+                        </div>
+                        <div class="testimonials">
+                            <h4>Amazing amazing! The service was so friendly and the food was divine. What&nbsp;a&nbsp;perfect evening. Truly magical.</h4>
+                            <p>- HarperDenCo August 29 2020</p>
+                        </div>
+                        <div class="testimonials">
+                            <h4>Amazing amazing! The service was so friendly and the food was divine. What&nbsp;a&nbsp;perfect evening. Truly magical.</h4>
+                            <p>- HarperDenCo August 29 2020</p>
+                        </div>
+                    </div>
+                    <div class="testimonials-logo">
+                        <img src="images/home-page/services-logo.svg" alt="testimonials">
                     </div>
                 </div>
             </div>
@@ -193,11 +269,9 @@
                         <div class="contact-us social-networks">
                             <div>
                                 <img src="images/home-page/globe.svg" alt="contact-us">
-                                <span>Connect with us</span>
-                            </div>
-                            <div>
-                                <img src="images/home-page/facebook.svg" alt="facebook">
-                                <img src="images/home-page/instagram.svg" alt="instagram">
+                                <span>Connect with us</span> <br>
+                                <img src="images/home-page/facebook.svg" alt="facebook" class="facebook">
+                                <img src="images/home-page/instagram.svg" alt="instagram" class="instagram">
                             </div>
                         </div>
                         <div class="contact-us appointment-section">
@@ -209,10 +283,11 @@
                     </div>
                     <div class="contact-us-form">
                         <form action="#">
-                            <label for="name">Your Name</label> <input type="text" name="name"><br>
-                            <label for="email">Email Address</label> <input type="email" name="email"><br>
-                            <label for="phone">Phone</label> <input type="tel" name="phone"><br>
-                            <p>Description</p><textarea name="description" cols="30" rows="10"></textarea>
+                            <label for="name">Your Name</label> <input type="text" name="name" class="name"><br>
+                            <label for="email">Email Address</label> <input type="email" name="email" class="email"><br>
+                            <label for="phone">Phone</label> <input type="tel" name="phone" class="phone"><br>
+                            <label for="description" class="label-description">Description<textarea name="description" cols="20" rows="10" class="description"></textarea></label>
+                            <button type="submit" class="btn btn-submit">Submit</button>
                         </form>
                     </div>
                 </div>
@@ -222,14 +297,63 @@
     </main>
     <!-- Main Section Ends -->
 
+    <!-- Footer Section Starts -->
+    <footer class="footer">
+        <section class="container footer-main">
+            <div class="footer-main-item">
+                <img src="images/home-page/Group 58.svg" alt="logo">
+                <ul class="footer-icon">
+                    <li>
+                        <span>Connect with us</span>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="images/home-page/facebook.svg" alt="linkedin">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="images/home-page/instagram.svg" alt="instagram">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer-main-item location-footer">
+                <h5>Location - Serving Southwest Colorado</h5>
+                <ul>
+                    <li>
+                        <a href="#">
+                            <img src="images/home-page/location-pin.svg" alt="location"> 4300 Last Dollar Road,<br> Telluride CO 81435
+                        </a>
+                    </li>
+                    <li>
+                        <a href="tel:+14012434626">
+                            <img src="images/home-page/telephone.svg" alt="tel"> +1 401 243 4626
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="footer-main-item">
+                <h5>Quick Links</h5>
+                <ul>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Private Chef</a></li>
+                    <li><a href="#">Meal Kits</a></li>
+                    <li><a href="#">Dinner Sleighs</a></li>
+                </ul>
+            </div>
+        </section>
+        <section class="footer-legal">
+            <p>Copyright (c) 2022 TellurideChef.com | All Rights Reserved</p>
+        </section>
+    </footer>
+    <!-- Footer Section Ends -->
+
     <!-- Jquery -->
     <script src="js/jquery.js"></script>
     <!-- Custom JS -->
     <script src="js/script.js"></script>
-    <!-- Slick Slider JS -->
-    <script src="css/slick-slider/slick.js"></script>
-    <script src="css/slick-slider/slick.min.js"></script>
-
     <!-- Owl Carousel JS -->
     <script src="js/owl-carousel/owl.carousel.min.js"></script>
 </body>

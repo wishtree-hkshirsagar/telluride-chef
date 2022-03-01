@@ -1,0 +1,245 @@
+/*=====================================
+            Responsive CSS
+=======================================*/
+
+
+/* Large Devices (Desktops & Laptops) */
+
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1175.6px;
+        padding: 68px 55px 22px 55px;
+    }
+    .brand-title {
+        padding: 55px 20px 35px 20px;
+    }
+    .navbar-nav .navbar-links ul li {
+        padding: 0 15px;
+    }
+    .home-wrapper .home-banner-info h1 {
+        font-size: 40px;
+    }
+    .home-wrapper .home-banner-image {
+        flex: 0 0 53%;
+        max-width: 53%;
+    }
+    .testimonial-wrapper::before {
+        content: "";
+        position: absolute;
+        background: url(../images/home-page/Path\ 1243.svg) no-repeat center/cover;
+        width: 1205px;
+        height: 800px;
+        bottom: -40%;
+        right: -42%;
+        z-index: -6;
+        left: 2%;
+    }
+}
+
+
+/* Medium Devices (Landscape Tablets & Medium Desktops) */
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .container {
+        max-width: 1176.5px;
+        padding: 45px 25px 22px 25px;
+    }
+    .navbar-nav .navbar-links ul li {
+        padding: 0;
+        padding-right: 15px;
+    }
+    .home-wrapper .home-banner-info h1 {
+        font-size: 30px;
+        line-height: 50px;
+    }
+    .home-banner-info::before {
+        content: "";
+        position: absolute;
+        height: 530px;
+        width: 610px;
+        top: -102%;
+        background-image: url(../images/home-page/Path-634.svg);
+        z-index: -6;
+        left: -61%;
+    }
+    .service-one-info::before {
+        content: "";
+        position: absolute;
+        background: url(../images/home-page/Path\ 608.svg) no-repeat center/cover;
+        width: 288px;
+        height: 224px;
+        bottom: 56%;
+        right: -16%;
+        z-index: -6;
+        left: 2%;
+    }
+    .service-two-info::before {
+        content: "";
+        position: absolute;
+        background: url(../images/home-page/Path\ 609.svg) no-repeat center/cover;
+        width: 276px;
+        height: 220px;
+        bottom: 55%;
+        right: -35%;
+        z-index: -6;
+        left: 36%;
+    }
+    .service-three-info::before {
+        content: "";
+        position: absolute;
+        background: url(../images/home-page/Path\ 610.svg) no-repeat center/cover;
+        width: 276px;
+        height: 220px;
+        bottom: 56%;
+        right: -35%;
+        z-index: -6;
+        left: 68%;
+    }
+    .owl-prev img {
+        left: -27rem;
+    }
+    .owl-next img {
+        right: -27rem;
+    }
+    .testimonial-wrapper::before {
+        content: "";
+        position: absolute;
+        background: url(../images/home-page/Path\ 1243.svg) no-repeat center/cover;
+        width: 1205px;
+        height: 800px;
+        bottom: -40%;
+        right: -42%;
+        z-index: -6;
+        left: -8%;
+    }
+}
+
+
+/* Small Devices (Portrait Tablets & Small Desktops) */
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .container {
+        max-width: 100%;
+        padding: 0 25px 0 25px;
+        width: 100%;
+        box-sizing: border-box;
+    }
+    .navbar-links ul li {
+        display: none;
+    }
+    .navbar-links ul li:last-child {
+        display: block;
+    }
+    .navbar {
+        justify-content: center;
+        margin-top: -100px;
+        flex-direction: column;
+    }
+    .mobile-navigation {
+        display: block;
+    }
+    .mobile-navbar-links {
+        display: block;
+    }
+    .mobile-nav-wrapper {
+        display: flex;
+        background: var(--white);
+        padding: 15px 10px;
+        justify-content: space-evenly;
+    }
+    .brand-title {
+        box-shadow: none;
+    }
+    .home-banner-info::before {
+        display: none;
+    }
+    .header {
+        box-shadow: 0px 3px 6px #00000040;
+    }
+    .home-wrapper .home-banner-info h1 {
+        font-size: 28px;
+        line-height: 30px;
+    }
+    .home-banner-image .leaf {
+        left: 9px;
+    }
+    .about-info::after {
+        right: -56%;
+    }
+    .service-one-info::before {
+        content: "";
+        position: absolute;
+        background: url(../images/home-page/Path\ 608.svg) no-repeat center/cover;
+        width: 288px;
+        height: 224px;
+        bottom: 60%;
+        right: -35%;
+        z-index: -6;
+        left: -13%;
+    }
+    .service-two-info::before {
+        content: "";
+        position: absolute;
+        background: url(../images/home-page/Path\ 609.svg) no-repeat center/cover;
+        width: 276px;
+        height: 220px;
+        bottom: 60%;
+        right: -35%;
+        z-index: -6;
+        left: 31%;
+    }
+    .service-three-info::before {
+        content: "";
+        position: absolute;
+        background: url(../images/home-page/Path\ 610.svg) no-repeat center/cover;
+        width: 276px;
+        height: 220px;
+        bottom: 59%;
+        right: -35%;
+        z-index: -6;
+        left: 64%;
+    }
+    .owl-prev img {
+        left: -17rem;
+    }
+    .owl-next img {
+        right: -17rem;
+    }
+    .testimonial-wrapper::before {
+        content: "";
+        position: absolute;
+        background: url(../images/home-page/Path\ 1243.svg) no-repeat center/cover;
+        width: 1205px;
+        height: 800px;
+        bottom: -40%;
+        right: -42%;
+        z-index: -6;
+        left: -10%;
+    }
+    .contact {
+        padding-bottom: 60px;
+    }
+    .contact-us-form .name {
+        right: 0;
+        top: -10px;
+    }
+    .contact-us-form .email {
+        right: -3px;
+        top: -5px;
+    }
+    .contact-us-form .phone {
+        right: 50px;
+        top: 35px;
+    }
+    label[for="description"] {
+        top: 39px;
+        left: 5px;
+    }
+    label[for="description"] textarea {
+        position: unset;
+    }
+    .btn-submit {
+        left: 5px;
+        top: 50px;
+    }
+}

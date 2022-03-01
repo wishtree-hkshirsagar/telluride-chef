@@ -10,7 +10,8 @@
         Black: #000000
         Creole: #383027
         Grey: #D3D3D3
-        Light Gray: #3830270d
+        Light Grey: #3830270d
+        Light Grey 1 : #f9f9f9
         Sea Green: #319647
 ============================ */
 
@@ -25,6 +26,7 @@
     --creole: #383027;
     --grey: #d3d3d3;
     --light-grey: #3830270d;
+    --light-grey-1: #f9f9f9;
     --sea-green: #319647;
 }
 
@@ -229,6 +231,96 @@ li {
     left: -55%;
 }
 
+.mobile-navigation {
+    display: none;
+}
+
+.mobile-navbar-links {
+    display: none;
+}
+
+
+/* Mobile Navigation */
+
+.mobile-nav-wrapper {
+    text-align: center;
+    display: flex;
+}
+
+.mobile-navbar-links .mobile-nav {
+    position: fixed;
+    bottom: 0;
+    font-size: 1.5rem;
+    cursor: pointer;
+    z-index: 1;
+    width: 100%;
+    left: 0;
+    background: white;
+}
+
+.mobile-navigation {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 2;
+    box-shadow: 2px 0 2px rgba(0, 0, 0, 0.2);
+    transform: translateX(100%);
+    -webkit-transform: translateX(100%);
+    -moz-transform: translateX(100%);
+    -ms-transform: translateX(100%);
+    -o-transform: translateX(100%);
+    transition: all 1s linear;
+    -webkit-transition: all 1s linear;
+    -moz-transition: all 1s linear;
+    -ms-transition: all 1s linear;
+    -o-transition: all 1s linear;
+}
+
+.showNav {
+    transform: translate(0);
+    -webkit-transform: translate(0);
+    -moz-transform: translate(0);
+    -ms-transform: translate(0);
+    -o-transform: translate(0);
+}
+
+.nav-close {
+    font-size: 2.5rem;
+    cursor: pointer;
+    color: var(--frenchRose);
+    transition: all 1s linear;
+    -webkit-transition: all 1s linear;
+    -moz-transition: all 1s linear;
+    -ms-transition: all 1s linear;
+    -o-transition: all 1s linear;
+}
+
+.nav-link {
+    display: block;
+    font-size: 1.5rem;
+    padding: 1.25rem 1rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5rem;
+    color: var(--grayOne);
+    transition: all 1s linear;
+    -webkit-transition: all 1s linear;
+    -moz-transition: all 1s linear;
+    -ms-transition: all 1s linear;
+    -o-transition: all 1s linear;
+}
+
+
+/* .nav-link:hover {
+    background: var(--gray);
+    padding-left: 1.5rem;
+    border-left: 0.25rem solid var(--grayOne);
+} */
+
+
+/* *********************************** */
+
 
 /*=====================================
         About Section Starts
@@ -389,8 +481,59 @@ li {
         Testimonials Section Starts
 =======================================*/
 
+.testimonial {
+    position: relative;
+    padding: 60px 0;
+    margin-bottom: 40px;
+}
+
 .testimonials {
     text-align: center;
+}
+
+.testimonial-wrapper {
+    position: relative;
+}
+
+.testimonials-logo h2 {
+    font-family: 'Poppins-SemiBold';
+    font-size: 25px;
+    margin-bottom: 50px;
+}
+
+.testimonials h4 {
+    font-family: 'Poppins-Regular';
+    font-size: 20px;
+    padding: 0 100px;
+    margin-bottom: 25px;
+}
+
+.owl-prev img {
+    position: relative;
+    left: -33rem;
+    top: -2rem;
+}
+
+.owl-next img {
+    position: relative;
+    right: -33rem;
+    top: -2rem;
+}
+
+.owl-theme .owl-nav [class*="owl-"]:hover {
+    background: none !important;
+}
+
+.testimonial-wrapper::before {
+    content: "";
+    position: absolute;
+    background: url(../images/home-page/Path\ 1243.svg) no-repeat center/cover;
+    width: 1205px;
+    height: 800px;
+    bottom: -40%;
+    right: -42%;
+    z-index: -6;
+    left: 2%;
 }
 
 
@@ -409,6 +552,11 @@ li {
 .contact-us-info {
     flex: 0 0 37.34%;
     max-width: 37.34%;
+}
+
+.contact-us-info div,
+.contact-us-info h2 {
+    margin-bottom: 35px;
 }
 
 .contact-us-form {
@@ -436,4 +584,100 @@ li {
     -moz-border-radius: 10px;
     -ms-border-radius: 10px;
     -o-border-radius: 10px;
+}
+
+.contact-us-form .name {
+    position: relative;
+    right: -35px;
+}
+
+.contact-us-form .email {
+    position: relative;
+    right: -13px;
+}
+
+.contact-us-form .phone {
+    position: relative;
+    right: -78px;
+}
+
+.contact-us-form label {
+    position: relative;
+    top: -15px;
+}
+
+label[for="description"] textarea {
+    vertical-align: baseline;
+    width: 79%;
+    margin-right: 25px;
+    position: relative;
+    right: -43px;
+    top: -5%;
+    margin-top: 25px;
+}
+
+.social-networks .facebook {
+    margin-left: 25px;
+}
+
+.appointment-section span {
+    display: inline-block;
+    margin-bottom: 25px;
+}
+
+.appointment-section p {
+    margin-bottom: 25px;
+    padding-right: 100px;
+}
+
+.btn-submit {
+    border: none;
+    position: relative;
+    left: 135px;
+}
+
+
+/*=====================================
+        Footer Section Starts
+=======================================*/
+
+
+/* .footer, */
+
+.footer-main,
+.footer-icon {
+    display: flex;
+}
+
+.footer>.container {
+    flex: 1;
+}
+
+.footer-main {
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.footer-icon li {
+    padding: 20px 10px;
+}
+
+.location-footer li {
+    padding-bottom: 15px;
+}
+
+.footer-main-item h5 {
+    margin-bottom: 25px;
+}
+
+.footer-legal {
+    display: flex;
+    justify-content: center;
+    background-color: var(--creole);
+    color: var(--white);
+    height: 40px;
+    flex-direction: column;
+    text-align: center;
+    font-family: 'Poppins-Regular';
+    font-size: 12px;
 }

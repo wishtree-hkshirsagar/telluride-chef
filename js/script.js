@@ -13,11 +13,12 @@ $(window).on('load', function() {
 $(function() {
     $("#testimonial-slider").owlCarousel({
         items: 1,
-        autoplay: true,
+        autoplay: false,
         smartSpeed: 500,
         loop: true,
-        autoplayHoverPause: true,
-        nav: false,
-        dots: true
+        autoplayHoverPause: false,
+        nav: true,
+        dots: false,
+        navText: ["<img src='images/home-page/down-arrow.svg'>", "<img src='images/home-page/down-arrow-1.svg'>"]
     });
 });
