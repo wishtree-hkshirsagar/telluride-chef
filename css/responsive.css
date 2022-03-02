@@ -6,6 +6,9 @@
 /* Large Devices (Desktops & Laptops) */
 
 @media (min-width: 1200px) {
+    body {
+        margin-bottom: 0;
+    }
     .container {
         max-width: 1175.6px;
         padding: 68px 55px 22px 55px;
@@ -118,6 +121,9 @@
 /* Small Devices (Portrait Tablets & Small Desktops) */
 
 @media (min-width: 768px) and (max-width: 991px) {
+    body {
+        margin-bottom: 100px;
+    }
     .container {
         max-width: 100%;
         padding: 60px 25px 45px 25px;
@@ -245,5 +251,172 @@
     .btn-submit {
         left: 5px;
         top: 50px;
+    }
+}
+
+
+/* Extra Small Devices (Portrait Tablets & Landscape Phone) */
+
+@media(min-width: 360px) and (max-width: 767px) {
+    body {
+        margin-bottom: 100px;
+    }
+    .container {
+        max-width: 100%;
+        padding: 60px 25px 45px 25px;
+        width: 100%;
+        box-sizing: border-box;
+    }
+    .mobile-nav .container {
+        padding: 0;
+    }
+    .navbar-links ul li {
+        display: none;
+    }
+    .navbar-links ul li:last-child {
+        display: block;
+    }
+    .navbar {
+        justify-content: center;
+        margin-top: -100px;
+        flex-direction: column;
+    }
+    .mobile-navigation {
+        display: block;
+    }
+    .mobile-navbar-links {
+        display: block;
+    }
+    .header {
+        box-shadow: 0px 3px 6px #00000040;
+    }
+    .brand-title {
+        box-shadow: none;
+    }
+    .home-wrapper .home-banner-info {
+        flex: 0 0 100%;
+        max-width: 100%;
+        order: 1;
+    }
+    .home-wrapper .home-banner-info h1 {
+        font-size: 27px;
+        line-height: 35px;
+    }
+    .home-banner-info::before {
+        display: none;
+    }
+    .home-wrapper {
+        flex-direction: column;
+    }
+    .home-banner-image .leaf {
+        left: -15px;
+        bottom: 19px;
+    }
+    .home-wrapper .home-banner-image {
+        flex: 0 0 100%;
+        max-width: 100%;
+        order: 0;
+    }
+    .about-wrapper {
+        flex-direction: column;
+    }
+    .about-image {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .about-info {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .about-info::after {
+        content: "";
+        position: absolute;
+        background-image: url(../images/home-page/Path-633.svg);
+        width: 565px;
+        height: 687px;
+        bottom: -10%;
+        right: -46%;
+        z-index: -6;
+    }
+    .service-wrapper {
+        flex-direction: column;
+    }
+    .service-one,
+    .service-two {
+        margin-bottom: 80px;
+    }
+    .service-one-info::before {
+        bottom: 58%;
+        left: 0%;
+    }
+    .service-two-info::before {
+        bottom: 51%;
+        left: 4%;
+    }
+    .service-three-info::before {
+        bottom: 17%;
+        left: 2%;
+    }
+    .owl-prev img {
+        left: -8rem;
+        top: -75px;
+    }
+    .owl-next img {
+        right: -8rem;
+        top: -75px;
+    }
+    .testimonials h4 {
+        padding: 0 15px;
+        margin-bottom: 22px;
+    }
+    .testimonial-wrapper::before {
+        width: 386px;
+        height: 275px;
+        bottom: 18%;
+        left: -7%;
+    }
+    .contact-us-wrapper {
+        flex-direction: column;
+    }
+    .contact-us-info {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .contact-us-form {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .contact-us-form label {
+        top: 0;
+    }
+    .contact-us-form .name,
+    .contact-us-form .email,
+    .contact-us-form .phone {
+        right: 0;
+    }
+    label[for="description"] textarea {
+        width: 85%;
+        right: 0;
+        margin-top: 0;
+    }
+    .btn-submit {
+        left: 0;
+        top: 15px;
+    }
+    .footer-main {
+        justify-content: flex-start;
+    }
+    .mobile-nav-wrapper {
+        justify-content: space-around;
+        align-items: center;
+    }
+    .mobile-nav-items::before {
+        width: 355px;
+        height: 645px;
+        bottom: -156px;
+    }
+    .nav-close {
+        position: relative;
+        top: -50px;
     }
 }

@@ -272,11 +272,11 @@ li {
     -moz-transform: translateX(100%);
     -ms-transform: translateX(100%);
     -o-transform: translateX(100%);
-    transition: all 1s linear;
-    -webkit-transition: all 1s linear;
-    -moz-transition: all 1s linear;
-    -ms-transition: all 1s linear;
-    -o-transition: all 1s linear;
+    transition: all 0.25s linear;
+    -webkit-transition: all 0.25s linear;
+    -moz-transition: all 0.25s linear;
+    -ms-transition: all 0.25s linear;
+    -o-transition: all 0.25s linear;
 }
 
 .showNav {
@@ -291,11 +291,11 @@ li {
     font-size: 2.5rem;
     cursor: pointer;
     color: var(--frenchRose);
-    transition: all 1s linear;
-    -webkit-transition: all 1s linear;
-    -moz-transition: all 1s linear;
-    -ms-transition: all 1s linear;
-    -o-transition: all 1s linear;
+    transition: all 0.25s linear;
+    -webkit-transition: all 0.25s linear;
+    -moz-transition: all 0.25s linear;
+    -ms-transition: all 0.25s linear;
+    -o-transition: all 0.25s linear;
 }
 
 .nav-link {
@@ -305,11 +305,11 @@ li {
     text-transform: uppercase;
     letter-spacing: 0.5rem;
     color: var(--grayOne);
-    transition: all 1s linear;
-    -webkit-transition: all 1s linear;
-    -moz-transition: all 1s linear;
-    -ms-transition: all 1s linear;
-    -o-transition: all 1s linear;
+    transition: all 0.25s linear;
+    -webkit-transition: all 0.25s linear;
+    -moz-transition: all 0.25s linear;
+    -ms-transition: all 0.25s linear;
+    -o-transition: all 0.25s linear;
 }
 
 .navbar-header {
