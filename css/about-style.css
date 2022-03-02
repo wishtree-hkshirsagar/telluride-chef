@@ -1,0 +1,46 @@
+/*=====================================
+                Colors
+=======================================*/
+
+:root {
+    --white: #ffffff;
+    --black: #000000;
+    --creole: #383027;
+    --grey: #d3d3d3;
+    --light-grey: #3830270d;
+    --light-grey-1: #f9f9f9;
+    --sea-green: #319647;
+}
+
+.brand-title {
+    background: var(--white);
+}
+
+.about-us {
+    background-image: url(../images/about/meeee.png);
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.about-us-wrapper {
+    display: flex;
+}
+
+.about-us-empty {
+    flex: 0 0 65%;
+    max-width: 65%;
+}
+
+.about-us-info {
+    flex: 0 0 33.46%;
+    max-width: 33.46%;
+    padding: 40px;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 30px;
+    color: var(--white);
+}
+
+.header {
+    margin-bottom: -55px;
+}

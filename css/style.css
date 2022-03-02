@@ -665,6 +665,10 @@ label[for="description"] textarea {
     display: flex;
 }
 
+.footer {
+    background: var(--grey);
+}
+
 .footer>.container {
     flex: 1;
 }
