@@ -120,9 +120,12 @@
 @media (min-width: 768px) and (max-width: 991px) {
     .container {
         max-width: 100%;
-        padding: 0 25px 0 25px;
+        padding: 60px 25px 45px 25px;
         width: 100%;
         box-sizing: border-box;
+    }
+    .mobile-nav .container {
+        padding: 0;
     }
     .navbar-links ul li {
         display: none;
@@ -146,6 +149,7 @@
         background: var(--white);
         padding: 15px 10px;
         justify-content: space-evenly;
+        align-items: center;
     }
     .brand-title {
         box-shadow: none;
