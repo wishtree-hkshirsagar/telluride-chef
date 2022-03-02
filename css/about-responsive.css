@@ -1,0 +1,59 @@
+/*=====================================
+           About Responsive CSS
+=======================================*/
+
+
+/* Large Devices (Desktops & Laptops) */
+
+@media (min-width: 1200px) {
+    .container {
+        max-width: 100%;
+        padding: 68px 55px 22px 55px;
+    }
+}
+
+
+/* Medium Devices (Landscape Tablets & Medium Desktops) */
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .about-us-empty {
+        flex: 0 0 58%;
+        max-width: 58%;
+    }
+}
+
+
+/* Small Devices (Portrait Tablets & Small Desktops) */
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .navbar-nav .navbar-links ul li:last-child a {
+        display: block;
+        margin-bottom: 25px;
+    }
+    .about-us {
+        display: none;
+    }
+    .about-us-responsive {
+        display: block;
+        margin-top: 50px;
+    }
+    .about-us-info-responsive {
+        margin-top: 50px;
+    }
+}
+
+
+/* Extra Small Devices (Portrait Tablets & Landscape Phone) */
+
+@media(min-width: 360px) and (max-width: 767px) {
+    .about-us {
+        display: none;
+    }
+    .about-us-responsive {
+        display: block;
+        margin-top: 50px;
+    }
+    .about-us-info-responsive {
+        margin-top: 50px;
+    }
+}
