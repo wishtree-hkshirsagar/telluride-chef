@@ -1,0 +1,70 @@
+:root {
+    --white: #ffffff;
+}
+
+.header {
+    margin-bottom: -55px;
+    box-shadow: 0px 3px 6px #00000040;
+}
+
+.brand-title {
+    z-index: 5;
+    background: var(--white);
+}
+
+.meal-kit-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.meal-kit-info-1-section {
+    text-align: center;
+}
+
+.meal-kit-info {
+    flex: 0 0 54.39%;
+    max-width: 54.39%;
+    position: relative;
+}
+
+.meal-kit-info::before {
+    content: "";
+    position: absolute;
+    height: 785px;
+    width: 1075px;
+    top: -79%;
+    background-image: url(../images/home-page/Path-633.svg);
+    z-index: -6;
+    left: -86%;
+}
+
+.meal-kit-image {
+    flex: 0 0 38.26%;
+    max-width: 38.26%;
+}
+
+.meal-kit-info h2 {
+    font-size: 45px;
+    font-family: 'Poppins-SemiBold';
+    margin-bottom: 25px;
+}
+
+.meal-kit-info p {
+    margin-bottom: 25px;
+    line-height: 25px;
+}
+
+.meal-kit-info-1-section img {
+    margin-bottom: 75px;
+}
+
+.meal-kit-info-1-section p {
+    margin-bottom: 38px;
+    font-size: 16px;
+}
+
+.btn-meal-kit {
+    display: inline-block;
+    margin-bottom: 80px;
+}

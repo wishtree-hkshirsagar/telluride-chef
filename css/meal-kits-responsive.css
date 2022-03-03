@@ -1,5 +1,5 @@
 /*=====================================
-        Private Chef Responsive CSS
+        Meal Kit Responsive CSS
 =======================================*/
 
 
@@ -15,25 +15,40 @@
 
 /* Medium Devices (Landscape Tablets & Medium Desktops) */
 
-@media (min-width: 992px) and (max-width: 1199px) {}
+@media (min-width: 992px) and (max-width: 1199px) {
+    .meal-kit-info::before {
+        content: "";
+        position: absolute;
+        height: 772px;
+        width: 1082px;
+        top: -53%;
+        background-image: url(../images/home-page/Path-633.svg);
+        z-index: -6;
+        left: -108%;
+    }
+}
 
 
 /* Small Devices (Portrait Tablets & Small Desktops) */
 
 @media (min-width: 768px) and (max-width: 991px) {
-    .private-chef-banner {
+    .meal-kit-banner {
         display: none;
     }
     .navbar-nav .navbar-links ul li:last-child a {
         display: block;
         margin-bottom: 25px;
     }
-    .private-chef-info-section {
+    .meal-kit-info-section {
         padding: 80px 0 15px 0;
     }
-    .private-chef-image {
+    .meal-kit-image {
         flex: 0 0 40%;
         max-width: 40%;
+    }
+    .meal-kit-info::before {
+        top: -35%;
+        left: -167%;
     }
 }
 
@@ -45,22 +60,26 @@
         display: block;
         margin-bottom: 25px;
     }
-    .private-chef-banner {
+    .meal-kit-banner {
         display: none;
     }
-    .private-chef-wrapper {
+    .meal-kit-wrapper {
         display: flex;
         flex-direction: column;
     }
-    .private-chef-image {
+    .meal-kit-image {
         flex: 0 0 100%;
         max-width: 100%;
+        order: 0;
+        margin-top: 41.1px;
+        margin-bottom: 35.06px;
     }
-    .private-chef-info {
+    .meal-kit-info {
         flex: 0 0 100%;
         max-width: 100%;
+        order: 1;
     }
-    .private-chef-info::after {
-        bottom: -20px;
+    .meal-kit-info::before {
+        top: 3%;
     }
 }
