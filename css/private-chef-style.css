@@ -1,0 +1,81 @@
+/*=====================================
+                Colors
+=======================================*/
+
+:root {
+    --white: #ffffff;
+    --black: #000000;
+    --creole: #383027;
+    --grey: #d3d3d3;
+    --light-grey: #3830270d;
+    --light-grey-1: #f9f9f9;
+    --sea-green: #319647;
+}
+
+.header {
+    margin-bottom: -55px;
+    box-shadow: 0px 3px 6px #00000040;
+}
+
+.private-chef-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.private-chef-image {
+    flex: 0 0 48.45%;
+    max-width: 48.45%;
+}
+
+.private-chef-info {
+    flex: 0 0 58.08%;
+    max-width: 58.08%;
+    position: relative;
+}
+
+.private-chef-info h2 {
+    font-size: 45px;
+    font-family: 'Poppins-SemiBold';
+    margin-bottom: 25px;
+}
+
+.private-chef-info p {
+    margin-bottom: 25px;
+    line-height: 25px;
+}
+
+.private-chef-info::after {
+    content: "";
+    position: absolute;
+    background-image: url(../images/home-page/Path-633.svg);
+    width: 770px;
+    height: 790px;
+    bottom: -75%;
+    right: -46%;
+    z-index: -6;
+    left: -4%;
+}
+
+.private-chef-info-1-section {
+    text-align: center;
+}
+
+.private-chef-info-1-section img {
+    margin-bottom: 75px;
+}
+
+.private-chef-info-1-section p {
+    margin-bottom: 38px;
+    font-size: 16px;
+}
+
+.btn-private-chef {
+    display: inline-block;
+    margin-bottom: 70px;
+}
+
+.brand-title {
+    z-index: 5;
+    background: var(--white);
+}

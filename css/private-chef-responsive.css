@@ -1,0 +1,66 @@
+/*=====================================
+           Private Chef Responsive CSS
+=======================================*/
+
+
+/* Large Devices (Desktops & Laptops) */
+
+@media (min-width: 1200px) {
+    .container {
+        max-width: 100%;
+        padding: 68px 55px 22px 55px;
+    }
+}
+
+
+/* Medium Devices (Landscape Tablets & Medium Desktops) */
+
+@media (min-width: 992px) and (max-width: 1199px) {}
+
+
+/* Small Devices (Portrait Tablets & Small Desktops) */
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .private-chef-banner {
+        display: none;
+    }
+    .navbar-nav .navbar-links ul li:last-child a {
+        display: block;
+        margin-bottom: 25px;
+    }
+    .private-chef-info-section {
+        padding: 80px 0 15px 0;
+    }
+    .private-chef-image {
+        flex: 0 0 40%;
+        max-width: 40%;
+    }
+}
+
+
+/* Extra Small Devices (Portrait Tablets & Landscape Phone) */
+
+@media(min-width: 360px) and (max-width: 767px) {
+    .navbar-nav .navbar-links ul li:last-child a {
+        display: block;
+        margin-bottom: 25px;
+    }
+    .private-chef-banner {
+        display: none;
+    }
+    .private-chef-wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+    .private-chef-image {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .private-chef-info {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .private-chef-info::after {
+        bottom: -20px;
+    }
+}
