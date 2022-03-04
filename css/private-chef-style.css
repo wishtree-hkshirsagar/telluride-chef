@@ -17,6 +17,10 @@
     align-items: center;
 }
 
+.private-chef-banner {
+    text-align: center;
+}
+
 .private-chef-image {
     flex: 0 0 48.45%;
     max-width: 48.45%;

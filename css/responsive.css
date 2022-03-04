@@ -252,6 +252,18 @@
         left: 5px;
         top: 50px;
     }
+    .navbar-links ul li:last-child {
+        font-size: 28px;
+    }
+    .navbar-links ul li:last-child img {
+        position: relative;
+        top: 12px;
+        transform: Scale(2, 2);
+    }
+    .navbar-nav .navbar-links ul li:last-child a {
+        display: block;
+        margin-bottom: 25px;
+    }
 }
 
 
@@ -275,6 +287,18 @@
     }
     .navbar-links ul li:last-child {
         display: block;
+    }
+    .navbar-links ul li:last-child {
+        font-size: 28px;
+    }
+    .navbar-links ul li:last-child img {
+        position: relative;
+        top: 12px;
+        transform: Scale(2, 2);
+    }
+    .navbar-nav .navbar-links ul li:last-child a {
+        display: block;
+        margin-bottom: 25px;
     }
     .navbar {
         justify-content: center;
@@ -303,7 +327,14 @@
         line-height: 35px;
     }
     .home-banner-info::before {
-        display: none;
+        content: "";
+        position: absolute;
+        height: 530px;
+        width: 610px;
+        top: -44%;
+        background: url(../images/home-page/responsive/Path\ 642.svg) no-repeat;
+        z-index: -6;
+        left: -55%;
     }
     .home-wrapper {
         flex-direction: column;
@@ -316,6 +347,9 @@
         flex: 0 0 100%;
         max-width: 100%;
         order: 0;
+    }
+    .about .container {
+        padding: 0 25px 45px 25px !important;
     }
     .about-wrapper {
         flex-direction: column;
@@ -418,5 +452,27 @@
     .nav-close {
         position: relative;
         top: -50px;
+    }
+    .contact .container {
+        padding: 50px 101px 28px 30px;
+    }
+    .contact-us-info h2 {
+        padding-right: 18px;
+    }
+    .appointment-section p {
+        padding-right: 0;
+    }
+    .appointment-section span {
+        position: relative;
+        top: -25px;
+        left: 25px;
+    }
+    .footer-icon li:first-child span,
+    .footer-tel {
+        display: inline-block;
+        margin-bottom: 60px;
+    }
+    .footer-legal p {
+        font-size: 10px;
     }
 }

@@ -42,3 +42,20 @@ navClose.on("click", () => {
     console.log('inside closebtn');
     navbar.removeClass("showNav");
 });
+
+/*=====================================
+            Smooth Scrolling
+=======================================*/
+
+$(function() {
+    $("a.smooth-scroll").click(function(event) {
+        event.preventDefault();
+
+        //get section id (ex: #home, #about)
+        var sectionId = $(this).attr("href");
+
+        $("html, body").animate({
+            scrollTop: $(sectionId).offset().top - 94
+        }, 1250, "easeInOutExpo");
+    });
+});

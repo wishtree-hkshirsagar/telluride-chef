@@ -1,0 +1,64 @@
+:root {
+    --white: #ffffff;
+}
+
+.header {
+    margin-bottom: -55px;
+    box-shadow: 0px 3px 6px #00000040;
+}
+
+.brand-title {
+    z-index: 5;
+    background: var(--white);
+}
+
+.sleigh-ride-dinners-banner {
+    text-align: center;
+}
+
+.sleigh-ride-dinners-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sleigh-ride-dinners-image {
+    flex: 0 0 46.97%;
+    max-width: 46.97%;
+}
+
+.sleigh-ride-dinners-info {
+    flex: 0 0 53.42%;
+    max-width: 53.42%;
+    position: relative;
+}
+
+.sleigh-ride-dinners-info::after {
+    content: "";
+    position: absolute;
+    background: url(../images/dinner-sleighs/Path\ 633.svg) no-repeat;
+    width: 770px;
+    height: 790px;
+    bottom: -275% !important;
+    right: -46%;
+    z-index: -6;
+    left: 6%;
+}
+
+.sleigh-ride-dinners-info-1-section {
+    text-align: center;
+}
+
+.sleigh-ride-dinners-info-1-section img {
+    margin-bottom: 75px;
+}
+
+.sleigh-ride-dinners-info-1-section p {
+    margin-bottom: 38px;
+    font-size: 16px;
+}
+
+.btn-sleigh-ride-dinner {
+    display: inline-block;
+    margin-bottom: 70px;
+}

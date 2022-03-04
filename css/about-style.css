@@ -1,4 +1,34 @@
 /*=====================================
+                Fonts
+=======================================*/
+
+@font-face {
+    font-family: 'Poppins-Regular';
+    src: url('fonts/Poppins-Regular.ttf') format('ttf');
+}
+
+@font-face {
+    font-family: 'Poppins-Light';
+    src: url('fonts/Poppins-Light.ttf') format('ttf');
+}
+
+@font-face {
+    font-family: 'Poppins-Semibold';
+    src: url('fonts/Poppins-SemiBold.ttf') format('ttf');
+}
+
+@font-face {
+    font-family: 'Poppins-Bold';
+    src: url('fonts/Poppins-Bold.ttf') format('ttf');
+}
+
+@font-face {
+    font-family: 'Poppins-Black';
+    src: url('fonts/Poppins-Black.ttf') format('ttf');
+}
+
+
+/*=====================================
                 Colors
 =======================================*/
 
@@ -39,6 +69,17 @@
     background-color: rgba(0, 0, 0, 0.7);
     border-radius: 30px;
     color: var(--white);
+}
+
+.about-us-info h1 {
+    font-family: 'Poppins-SemiBold';
+    margin-bottom: 10px;
+}
+
+.about-us-info p {
+    font-family: 'Poppins-Regular';
+    font-size: 16px;
+    line-height: 25px;
 }
 
 .header {

@@ -12,6 +12,10 @@
     background: var(--white);
 }
 
+.meal-kit-banner {
+    text-align: center;
+}
+
 .meal-kit-wrapper {
     display: flex;
     justify-content: space-between;

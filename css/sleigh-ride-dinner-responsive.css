@@ -1,5 +1,5 @@
 /*=====================================
-        Meal Kit Responsive CSS
+   Sleigh Ride Dinner Responsive CSS
 =======================================*/
 
 
@@ -10,21 +10,18 @@
         max-width: 1175.6px;
         padding: 68px 55px 22px 55px;
     }
+    .sleigh-ride-dinners-info::after {
+        bottom: -252%;
+    }
 }
 
 
 /* Medium Devices (Landscape Tablets & Medium Desktops) */
 
 @media (min-width: 992px) and (max-width: 1199px) {
-    .meal-kit-info::before {
-        content: "";
-        position: absolute;
-        height: 772px;
-        width: 1082px;
-        top: -53%;
-        background-image: url(../images/home-page/Path-633.svg);
-        z-index: -6;
-        left: -108%;
+    .sleigh-ride-dinners-info::after {
+        bottom: -219%;
+        left: 21%;
     }
 }
 
@@ -32,23 +29,12 @@
 /* Small Devices (Portrait Tablets & Small Desktops) */
 
 @media (min-width: 768px) and (max-width: 991px) {
-    .meal-kit-banner {
+    .sleigh-ride-dinners-banner {
         display: none;
     }
-    .navbar-nav .navbar-links ul li:last-child a {
-        display: block;
-        margin-bottom: 25px;
-    }
-    .meal-kit-info-section {
-        padding: 80px 0 15px 0;
-    }
-    .meal-kit-image {
-        flex: 0 0 40%;
-        max-width: 40%;
-    }
-    .meal-kit-info::before {
-        top: -35%;
-        left: -167%;
+    .sleigh-ride-dinners-info::after {
+        bottom: -209%;
+        left: 6%;
     }
 }
 
@@ -60,26 +46,28 @@
         display: block;
         margin-bottom: 25px;
     }
-    .meal-kit-banner {
+    .sleigh-ride-dinners-banner {
         display: none;
     }
-    .meal-kit-wrapper {
-        display: flex;
+    .sleigh-ride-dinners-wrapper {
         flex-direction: column;
     }
-    .meal-kit-image {
+    .sleigh-ride-dinners-image {
         flex: 0 0 100%;
         max-width: 100%;
-        order: 0;
-        margin-top: 41.1px;
-        margin-bottom: 35.06px;
+        margin-bottom: 30px;
     }
-    .meal-kit-info {
+    .sleigh-ride-dinners-info {
         flex: 0 0 100%;
         max-width: 100%;
-        order: 1;
+        position: relative;
     }
-    .meal-kit-info::before {
-        top: 3%;
+    .sleigh-ride-dinners-info h2 {
+        font-size: 45px;
+        line-height: 60px;
+    }
+    .sleigh-ride-dinners-info::after {
+        bottom: -122% !important;
+        left: 18%;
     }
 }

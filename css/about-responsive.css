@@ -7,7 +7,7 @@
 
 @media (min-width: 1200px) {
     .container {
-        max-width: 100%;
+        max-width: 1175.6px;
         padding: 68px 55px 22px 55px;
     }
 }
@@ -26,10 +26,6 @@
 /* Small Devices (Portrait Tablets & Small Desktops) */
 
 @media (min-width: 768px) and (max-width: 991px) {
-    .navbar-nav .navbar-links ul li:last-child a {
-        display: block;
-        margin-bottom: 25px;
-    }
     .about-us {
         display: none;
     }
@@ -37,8 +33,14 @@
         display: block;
         margin-top: 50px;
     }
+    .about-us-responsive .container {
+        /* padding: 0; */
+    }
     .about-us-info-responsive {
         margin-top: 50px;
+    }
+    .about-us-info-responsive h1 {
+        font-size: 45px;
     }
 }
 
@@ -55,5 +57,16 @@
     }
     .about-us-info-responsive {
         margin-top: 50px;
+    }
+    .about-us-info-responsive h1 {
+        font-size: 45px;
+    }
+    .navbar-links ul li:last-child {
+        font-size: 28px;
+    }
+    .navbar-links ul li:last-child img {
+        position: relative;
+        top: 12px;
+        transform: Scale(2, 2);
     }
 }
