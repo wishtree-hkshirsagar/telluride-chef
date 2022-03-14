@@ -3,7 +3,7 @@
 }
 
 .header {
-    margin-bottom: -55px;
+    margin-bottom: -85px;
     box-shadow: 0px 3px 6px #00000040;
 }
 
@@ -37,7 +37,7 @@
     position: absolute;
     height: 785px;
     width: 1075px;
-    top: -79%;
+    top: -67%;
     background-image: url(../images/home-page/Path-633.svg);
     z-index: -6;
     left: -86%;

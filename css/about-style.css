@@ -42,6 +42,10 @@
     --sea-green: #319647;
 }
 
+.header {
+    margin-bottom: -35px;
+}
+
 .brand-title {
     background: var(--white);
 }
@@ -74,17 +78,13 @@
 .about-us-info h1 {
     font-family: 'Poppins-SemiBold';
     margin-bottom: 10px;
+    font-size: 30px;
 }
 
 .about-us-info p {
     font-family: 'Poppins-Regular';
     font-size: 16px;
-    line-height: 25px;
-}
-
-.header {
-    margin-bottom: -55px;
-    margin-top: 0;
+    line-height: 1.56;
 }
 
 .about-us-responsive {
