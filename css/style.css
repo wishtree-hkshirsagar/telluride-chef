@@ -129,6 +129,16 @@ section {
     padding: 50px 0;
 }
 
+.fa-times {
+    position: relative;
+    top: -70px;
+    transform: scale(2.5);
+    -webkit-transform: scale(2.5);
+    -moz-transform: scale(2.5);
+    -ms-transform: scale(2.5);
+    -o-transform: scale(2.5);
+}
+
 
 /*=====================================
             Utilities Classes
@@ -149,7 +159,11 @@ section {
 
 .highlighted {
     color: var(--sea-green) !important;
-    font-weight: bold;
+}
+
+.btn:hover {
+    color: var(--white);
+    background: var(--sea-green);
 }
 
 
@@ -350,7 +364,7 @@ section {
     font-size: 1.5rem;
     padding: 1rem 1rem;
     text-transform: uppercase;
-    letter-spacing: 0.5rem;
+    letter-spacing: normal;
     color: var(--grayOne);
     transition: all 0.25s linear;
     -webkit-transition: all 0.25s linear;
@@ -391,6 +405,7 @@ section {
 
 .about {
     padding-bottom: 0;
+    overflow: hidden;
 }
 
 .about-wrapper {
@@ -428,7 +443,7 @@ section {
     position: absolute;
     background-image: url(../images/home-page/Path-633.svg);
     width: 680px;
-    height: 738px;
+    height: 795px;
     bottom: -21%;
     right: -46%;
     z-index: -6;
@@ -649,7 +664,7 @@ section {
 }
 
 .contact-us-form input {
-    border: none;
+    border: 1px solid var(--white);
     height: 40px;
     border-radius: 10px;
     padding: 7px 15px;
@@ -664,12 +679,12 @@ section {
 .contact-us-form input:focus,
 .contact-us-form textarea:focus {
     outline: none !important;
-    border: 2px solid blue;
+    border: 1px solid blue;
 }
 
 .contact-us-form textarea {
     resize: none;
-    border: none;
+    border: 1px solid var(--white);
     border-radius: 10px;
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
@@ -728,10 +743,6 @@ label[for="description"] textarea {
     position: relative;
     left: 135px;
     cursor: pointer;
-}
-
-.btn-submit:hover {
-    color: var(--sea-green);
 }
 
 

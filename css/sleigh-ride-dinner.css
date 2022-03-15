@@ -22,6 +22,10 @@
     align-items: center;
 }
 
+.sleigh-ride-dinner-banner-image {
+    width: 100%;
+}
+
 .sleigh-ride-dinners-image {
     flex: 0 0 46.97%;
     max-width: 46.97%;
@@ -61,4 +65,9 @@
 .btn-sleigh-ride-dinner {
     display: inline-block;
     margin-bottom: 70px;
+}
+
+.fa-times {
+    position: relative;
+    top: 0;
 }

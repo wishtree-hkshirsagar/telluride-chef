@@ -21,6 +21,10 @@
     text-align: center;
 }
 
+.private-chef-banner-image {
+    width: 100%;
+}
+
 .private-chef-image {
     flex: 0 0 48.45%;
     max-width: 48.45%;
@@ -76,4 +80,9 @@
 .brand-title {
     z-index: 5;
     background: var(--white);
+}
+
+.fa-times {
+    position: relative;
+    top: 0;
 }

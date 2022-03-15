@@ -90,3 +90,8 @@
 .about-us-responsive {
     display: none;
 }
+
+.fa-times {
+    position: relative;
+    top: 0;
+}

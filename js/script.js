@@ -35,12 +35,18 @@ const navClose = $("#nav-close");
 navBtn.on("click", () => {
     console.log('inside navbtn');
     navbar.addClass("showNav");
+    $('.brand-title').css({
+        'display': 'none'
+    })
 });
 
 // close nav
 navClose.on("click", () => {
     console.log('inside closebtn');
     navbar.removeClass("showNav");
+    $('.brand-title').css({
+        'display': 'block'
+    })
 });
 
 /*=====================================

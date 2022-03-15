@@ -16,6 +16,10 @@
     text-align: center;
 }
 
+.meal-kit-banner-image {
+    width: 100%;
+}
+
 .meal-kit-wrapper {
     display: flex;
     justify-content: space-between;
@@ -71,4 +75,9 @@
 .btn-meal-kit {
     display: inline-block;
     margin-bottom: 80px;
+}
+
+.fa-times {
+    position: relative;
+    top: 0;
 }
